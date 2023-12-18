@@ -1,6 +1,6 @@
 import time
  
-start_time = time.time()  # время начала выполнения
+start_time = time.time()  # execution start time
 
 def linear_Search(list1, n, key): 
  
@@ -19,10 +19,10 @@ key = 4
 n = len(list1) 
 res = linear_Search(list1, n, key) 
 if(res == -1): 
-    print("Элемент на найден")
+    print("Item not found")
 else: 
-    print("Элемент найден под индексом: ", res)
+    print("Item found under index: ", res)
 
-end_time = time.time()  # время окончания выполнения
-execution_time = end_time - start_time  # вычисляем время выполнения
-print(f"Время выполнения программы: {execution_time} секунд")
+end_time = time.time()  # end time
+execution_time = end_time - start_time 
+print(f"Program execution time: {execution_time} second")
